@@ -1,0 +1,107 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# **Tarea Regresión Ridge y Lasso**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "- Giseth J. Jiménez Quiñones\n",
+    "&nbsp;\n",
+    "- Diego F. Silvera Vega\n",
+    "&nbsp;\n",
+    "- Marco A. Ramírez Sarmiento\n",
+    "&nbsp;"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1.\tEntregar las preguntas que se encuentran al final de la practica 5 (regresión lineal)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "1. ¿Qué significado tiene el intercepto? ¿Tiene sentido ser analizado para este problema?  \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Por definición, el intercepto corresponde al valor estimado por el modelo para la variable de salida (en este caso, el valor de la prima del seguro), cuando los valores de todas las variables de entrada del modelo son cero. Para este modelo en particular, esta situación no se presenta, dado que hay variables numéricas que no toman valor 0 (Age, BMI, Charges), y las variables categóricas (Sex, Smoker, Region) se definieron como variables numéricas (binarias) que entre sí son mutuamente excluyentes, de modo que algunas necesariamente toman valor 1.\n",
+    "\n",
+    "&nbsp;\n",
+    "\n",
+    "En este caso, el intercepto se relacionaría con el caso mínimo, que corresponde a los valores mínimos de las variables numéricas, y según los coeficientes obtenidos para la definición de las variables categóricas, al caso particular de un hombre no fumador de la región southeast. Tiene sentido lógico incorporar el intercepto a este modelo, dado que este caso mínimo es posible, y el intercepto correspondería al ajuste que permite obtener el valor mínimo de la prima del seguro.     "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2. ¿Qué significado tienen los coeficientes que acompañan a las variables categóricas? (i.e smoker_no, smoker_yes)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3. Realice la estimación de la variable respuesta pero solo con las variables numéricas. ¿Cuál modelo utilizaría para predecir la prima del seguro? ¿Por qué?\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "\n",
+    "&nbsp;"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2.\tCon los datos utilizados en la práctica 6 (regresión ridge y Lasso), determine cuál es el mejor valor de alpha para el modelo de regresión ridge y lasso, para tal fin, divida la data en entrenamiento y validación (puede ser 80% para entrenamiento y 20% para validación), estime distintos modelos de regresión (ridge y lasso) utilizando la data de entrenamiento y distintos valores de alpha, luego, aplique los modelos estimados sobre la data de entrenamiento y validación, construya un gráfico (ver figura 1), donde en el eje x, se encuentra los distintos valores de alpha y en el eje y se encuentra una medida de error (puede utilizar una de las medidas de error que se encuentran en el laboratorio 6). A partir de este gráfico, determine el mejor valor de alpha."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
